@@ -17,5 +17,24 @@ public class ArrayCompareTest {
 		
 		assertArrayEquals(expected, numbers);
 	}
+	
+	// study of handling exceptions on unit test
+	// check NullPointerException as Exception test
+	@Test
+	public void testArraySort_NullArrayUsingTryCatchBlock() {
+		int[] numbers = null;	
+		try {
+			Arrays.sort(numbers); // this will sort numbers array according to ascending number order
+		} catch (NullPointerException e) {
+			// TODO: handle exception
+		}		
+	}
+	
+	// ANOTHER WAY TO check NullPointerException as Exception test
+		@Test(expected=NullPointerException.class)
+		public void testArraySort_NullArrayUsingExceptionHandlerWithAnnotation() {
+			int[] numbers = null;	
+			Arrays.sort(numbers); // this will sort numbers array according to ascending number order		
+		}
 
 }
