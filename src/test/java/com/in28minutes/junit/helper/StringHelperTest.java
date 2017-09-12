@@ -1,3 +1,7 @@
+/*
+ * First lesson on JUnit test
+ */
+
 package com.in28minutes.junit.helper;
 
 import static org.junit.Assert.*;

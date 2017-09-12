@@ -1,3 +1,7 @@
+/*
+ * study of handling exceptions on unit test
+ */
+
 package com.in28minutes.junit.helper;
 
 import static org.junit.Assert.*;
@@ -18,7 +22,6 @@ public class ArrayCompareTest {
 		assertArrayEquals(expected, numbers);
 	}
 	
-	// study of handling exceptions on unit test
 	// check NullPointerException as Exception test
 	@Test
 	public void testArraySort_NullArrayUsingTryCatchBlock() {
